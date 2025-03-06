@@ -9,9 +9,9 @@ import asyncio
 # Load environment variables from .env file
 load_dotenv()
 
-# Get Discord token and channel ID from environment variables
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-CHANNEL_ID = int(os.getenv("YOUR_DISCORD_CHANNEL_ID"))
+# Get Discord token and channel ID from environment variables, cant be pushed to github
+# DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+# CHANNEL_ID = int(os.getenv("YOUR_DISCORD_CHANNEL_ID"))
 
 # Set up Discord intents (message content is required for reading user messages)
 intents = discord.Intents.default()
@@ -152,4 +152,4 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 # Start the bot
-client.run(DISCORD_TOKEN)
+# client.run(DISCORD_TOKEN)
